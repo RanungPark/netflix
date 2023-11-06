@@ -153,7 +153,7 @@ const Search = () => {
                     whileHover="hover" 
                     initial="normal"
                     variants={boxVariants}
-                    onClick={() => history.push(`/netflix/search/movie/${movie.id}`)}
+                    onClick={() => history.push(`/woongflix/search/movie/${movie.id}`)}
                     >
                     <NonImag>
                       {movie.backdrop_path ? "" : <><TbMovieOff/><p>This is no image</p></>}
@@ -178,7 +178,7 @@ const Search = () => {
                     whileHover="hover" 
                     initial="normal"
                     variants={boxVariants}
-                    onClick={() => history.push(`/netflix/search/tv/${tv.id}`)}
+                    onClick={() => history.push(`/woongflix/search/tv/${tv.id}`)}
                     >
                     <NonImag>
                       {tv.backdrop_path ? "" : <><TbMovieOff/><p>This is no image</p></>}

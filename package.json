@@ -1,5 +1,5 @@
 {
-  "name": "netflix",
+  "name": "woongflix",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -53,5 +53,5 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.3.3"
   },
-  "homepage": "https://RanungPark.github.io/netflix"
+  "homepage": "https://RanungPark.github.io/woongflix"
 }

@@ -131,7 +131,7 @@ interface ISliderProps {
 const Slider: React.FC<ISliderProps> = ({data, title, type}) => {
   const history = useHistory();
   const onBoxClicked = (movieId: number) => {
-    history.push(`/netflix/${type}/${title}/${movieId}`);
+    history.push(`/woongflix/${type}/${title}/${movieId}`);
   };
   const [index, setIndex] = useState(0);
   const [leaving, setLeaving] = useState(false);

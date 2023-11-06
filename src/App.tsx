@@ -10,13 +10,13 @@ const App = () => {
     <Router>
       <Header />
       <Switch>
-        <Route path='/netflix/tv'>
+        <Route path='/woongflix/tv'>
           <Tv />
         </Route>
-        <Route path='/netflix/search'>
+        <Route path='/woongflix/search'>
           <Search />
         </Route>
-        <Route path={["/netflix/", "/netflix/movies/:movieId"]}>
+        <Route path={["/woongflix/", "/woongflix/movies/:movieId"]}>
           <Home />
         </Route>
       </Switch>

@@ -132,7 +132,7 @@ interface ISubViewProps {
 }
 
 const SubView:React.FC<ISubViewProps> = ({data, title, type}) => {
-  const bigMovieMatch = useRouteMatch<{ movieId: string }>(`/netflix/${type}/${title}/:movieId`);
+  const bigMovieMatch = useRouteMatch<{ movieId: string }>(`/woongflix/${type}/${title}/:movieId`);
   
   const clickedMovie =
     bigMovieMatch?.params.movieId &&
