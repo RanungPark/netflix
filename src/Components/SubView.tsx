@@ -6,6 +6,7 @@ import { IGetMoviesResult } from '../api';
 import { makeImagePath } from '../utils';
 import {AiFillStar} from 'react-icons/ai';
 import { TbMovieOff } from 'react-icons/tb';
+import { Helmet } from 'react-helmet';
 
 const Overlay = styled(motion.div)`
   position: fixed;
@@ -143,6 +144,11 @@ const SubView:React.FC<ISubViewProps> = ({data, title, type}) => {
 
   return (
     <>
+      <Helmet>
+        <title>
+         {clickedMovie && `woongFlix-${clickedMovie.id}`}
+        </title>
+      </Helmet>
       <AnimatePresence>
         {bigMovieMatch ? (
           <>

@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { makeImagePath } from '../utils';
 import { TbMovieOff } from 'react-icons/tb';
 import SubView from '../Components/SubView';
+import { Helmet } from 'react-helmet';
 
 const Wrapper = styled.div`
   background: black;
@@ -135,6 +136,11 @@ const Search = () => {
 
   return (
     <Wrapper>
+      <Helmet>
+        <title>
+         {searchLoading ? 'Loding...' : `woongFlix-${keyword}`}
+        </title>
+      </Helmet>
       {searchLoading ? (
         <Loader>Loding...</Loader>
       ) : (
